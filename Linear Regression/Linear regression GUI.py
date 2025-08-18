@@ -20,7 +20,7 @@ tester_row = {
 tester_row = pd.DataFrame([tester_row])
 
 # get the output/result/answer from the model
-# based on the user's new data (from above code cell)
+# based on the user's new data
 result = model.predict(tester_row)[0]
 print(f"Predicted Heating Load: {result[0]:.2f}")
 print(f"Predicted Cooling Load: {result[1]:.2f}")
